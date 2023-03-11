@@ -1,19 +1,20 @@
-﻿namespace StackUsingLinkedList
+﻿using QueueUsingLinkedList;
+
+namespace StackUsingLinkedList
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            //UC2 Ability to peak and pop from the Stack till it is empty56->30->70
-            //LIFO
+            //UC3 Ability to create a Queue of 56->30->70
+            //FIFO
 
-            LinkListStack linkListStack = new LinkListStack();
-            linkListStack.Push(70);
-            linkListStack.Push(30);
-            linkListStack.Push(56);
-            linkListStack.Peek();
-            linkListStack.Pop();
-            linkListStack.Display();
+            LinkedListQueue linkedListQueue = new LinkedListQueue();
+            linkedListQueue.Enqueue(56);
+            linkedListQueue.Enqueue(30);
+            linkedListQueue.Enqueue(70);
+            linkedListQueue.Display();// this.top=this.top.next
+            Console.ReadKey();
 
         }
     }

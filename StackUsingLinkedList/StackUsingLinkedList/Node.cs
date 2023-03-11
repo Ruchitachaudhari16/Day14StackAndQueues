@@ -8,11 +8,11 @@ namespace StackUsingLinkedList
 {
     internal class Node
     {
-        public int Data;
-        public Node Next;
+        public int data;
+        public Node next;
         public Node(int data)
         {
-            this.Data = data;
+            this.data = data;
         }
     }
 }
